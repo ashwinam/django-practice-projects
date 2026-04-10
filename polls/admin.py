@@ -8,4 +8,11 @@ class QuestionAdmin(admin.ModelAdmin):
     ]
 
 admin.site.register(Question, QuestionAdmin)
-admin.site.register(Choice)
+
+class ChoiceAdmin(admin.ModelAdmin):
+    fieldsets = [
+        ("Question & Choices", {"fields": ["question", "choice_text"]}),
+        ("Vote", {"fields": ["votes"]})
+    ]
+
+admin.site.register(Choice,ChoiceAdmin)
