@@ -6,4 +6,8 @@ readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "django-debug-toolbar>=6.3.0",
+    "django-filter>=25.2",
+    "djangorestframework>=3.17.1",
+    "markdown>=3.10.2",
+    "pygments>=2.20.0",
 ]
